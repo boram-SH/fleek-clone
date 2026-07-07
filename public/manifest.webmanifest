@@ -2,13 +2,14 @@
   "name": "Fleek Clone — Workout Tracker",
   "short_name": "FleekClone",
   "description": "로컬 오프라인 운동 기록 앱 (Fleek 핵심 기능 재구축)",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0e0f13",
   "theme_color": "#0e0f13",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "./icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

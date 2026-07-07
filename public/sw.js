@@ -2,7 +2,7 @@
 const CACHE = 'fleek-clone-v1'
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/'])))
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./'])))
   self.skipWaiting()
 })
 
@@ -22,6 +22,6 @@ self.addEventListener('fetch', (e) => {
         caches.open(CACHE).then((c) => c.put(e.request, copy))
         return res
       })
-      .catch(() => caches.match(e.request).then((hit) => hit || caches.match('/')))
+      .catch(() => caches.match(e.request).then((hit) => hit || caches.match('./')))
   )
 })
