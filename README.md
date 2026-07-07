@@ -3,6 +3,9 @@
 운동앱 **Fleek**(안드로이드)의 핵심 기능을 조사해 로컬 우선(offline-first) PWA로 재구축한 프로젝트입니다.
 조사 과정과 설계는 [PLAN.md](PLAN.md), 원본 리서치는 [docs/](docs/) 참고.
 
+**📱 바로 사용**: https://boram-sh.github.io/fleek-clone/ — 폰 브라우저로 열고 "홈 화면에 추가"하면
+앱으로 설치되며, 이후 오프라인에서도 동작합니다. `main` 브랜치에 푸시할 때마다 자동 재배포됩니다.
+
 ## 실행
 
 ```bash
@@ -12,8 +15,8 @@ npm run build    # dist/ 프로덕션 빌드
 npm run preview  # 빌드 결과 미리보기
 ```
 
-안드로이드 폰에서 쓰려면: 같은 Wi-Fi에서 `npx vite --host`로 띄운 뒤 폰 브라우저로 접속 →
-"홈 화면에 추가"(PWA 설치). 모든 데이터는 기기 localStorage에만 저장됩니다(서버 없음).
+모든 데이터는 기기 localStorage에만 저장됩니다(서버 없음). 배포 없이 폰에서 개발 버전을
+보려면 같은 Wi-Fi에서 `npx vite --host`로 띄운 뒤 폰 브라우저로 `http://PC_IP:5199` 접속.
 
 ## 기능
 
